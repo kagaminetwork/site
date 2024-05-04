@@ -1,81 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900%display=swap');
 
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-header {
+body
+{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 100px;
-    padding: 0 5%;
-    position: absolute;
-    width: 100%;
-    z-index: 100;
-}
-header h1 {
-    font-size: 40px;
-    color: white;
-}
-header nav {
-    display: flex;
-    gap: 30px;
-}
-header nav a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 600;
-    padding: 8px 16px;
-    border-radius: 99px;
-    transition: 0.3s;
-    color: white;
-}
-header nav a.active {
-    background: #5247B9;
-}
-header nav a:hover {
-    background: #5247B9;
-}
-header nav:hover > a:not(:hover) {
-    background: none;
-}
-
-.home {
-    display: flex;
-    height: 100dvh;
-    background: linear-gradient(to top, #D2E2FB 30%, #86A8DB);
-    position: relative;
+    min-height: 100vh;
+    background: #333;
     overflow: hidden;
 }
-
-.home img {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    pointer-events: none;
-}
-
-.home .title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 80px;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-}
-
-.about {
-    padding: 50px;
-    background: #3B3291;
-    color: white;
+#text
+{
     position: relative;
-    z-index: 100;
+    color: #fff;
+    font-weight: 100;
+    font-size: 10em;
+    cursor: default;
 }
-.about h1 {
-    font-size: 40px;
-}
+#light
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #fff,
+    0 0 50px #fff,
+    0 0 100px #fff,
+    0 0 200px #fff,
+    0 0 300px #fff;
